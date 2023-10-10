@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="{{lang if lang else 'it'}}" class="{{theme if theme else 'darkMode'}}">
+    <head>
+	{% if telegram %}
+	<script src="https://telegram.org/js/telegram-web-app.js"></script>
+	{% endif %}
+	<script src="https://unpkg.com/htmx.org@1.9.6" integrity="sha384-FhXw7b6AlE/jyjlZH5iHa/tTe9EpJ1Y55RjcgPbjeWMskSxZt1v9qkxLJWNJaGni" crossorigin="anonymous"></script>x
+	<link rel="stylesheet" href="../../styles/themes.css" />
+    </head>
+    <body>
+	<div id="page-content">
+	    {{ page |safe }}
+	</div>
+    </body>
+</html>

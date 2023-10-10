@@ -1,0 +1,15 @@
+<!-- <script type="module">
+     import "../../components/datepicker.js";
+     import "../../components/form.js";
+     import "../../components/submit-button.js";
+     </script> -->
+<link rel="stylesheet" href="../../styles/form.css"></link>
+<h1 class="page-title">Registra una nuova assenza</h1>
+<form id="create-absence-form" method="POST" action="/absences">
+    <input type="date" name="from" placeholder="Data di partenza" min="{{ min_date }}" required></input>
+    <input type="date" name="to" placeholder="Data di ritorno" required></input>
+    <input type="hidden" name="user_id" value="{{ user['id'] }}" required></input>
+    <!-- <input type="submit" name="Registra"> --></input>
+    <input type="submit" value="Invia"></button>
+</form>
+

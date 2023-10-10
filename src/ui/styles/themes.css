@@ -1,0 +1,50 @@
+:root.darkMode {
+  --background-color: var(--tg-theme-bg-color, grey);
+  --secondary-background-color: var(--tg-theme-secondary-bg-color, darkgrey);
+  --text-color: var(--tg-theme-text-color, white);
+  --secondary-text-color: var(--tg-theme-hint-color, lightgrey);
+  --link-color: var(--tg-theme-link-color, auto);
+  --button-color: var(--tg-theme-button-color, green);
+  --button-text-color: var(--tg-theme-button-text-color, auto);
+  --page-height: var(--tg-viewport-height, 100%);
+  --page-width: var(--tg-viewport-width, 100%);
+}
+
+:root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: var(--secondary-background-color);
+  padding: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+  min-height: 80%;
+  padding: 16px;
+}
+
+a {
+  color: var(--link-color);
+}
+
+input[type="button"],
+input[type="submit"],
+.button {
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+}

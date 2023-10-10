@@ -1,0 +1,6 @@
+dist/
+__pycache__
+bot.db
+.#*#
+*~
+node_modules/
